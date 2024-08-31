@@ -2,5 +2,6 @@
 export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
   devtools: { enabled: true },
-  compatibilityDate: "2024-08-31"
+  compatibilityDate: "2024-08-31",
+  modules: ["@nuxt/ui"]
 })
