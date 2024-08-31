@@ -11,9 +11,13 @@
     "preview": "nuxt preview .playground",
     "lint": "eslint ."
   },
+
+  "dependencies": {
+    "@nuxt/ui": "^2.18.4"
+  },
+
   "devDependencies": {
     "@nuxt/eslint": "latest",
-    "@nuxt/ui": "^2.18.4",
     "eslint": "^9.9.0",
     "nuxt": "^3.13.0",
     "typescript": "^5.5.4",
