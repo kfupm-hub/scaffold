@@ -1,12 +1,16 @@
 export default defineAppConfig({
-  myLayer: {
-    name: 'Hello from Nuxt layer'
+  scaffold: {
+    name: 'Scaffold'
+  },
+  ui: {
+    primary: 'green',
+    gray: 'neutral'
   }
 })
 
 declare module '@nuxt/schema' {
   interface AppConfigInput {
-    myLayer?: {
+    scaffold?: {
       /** Project name */
       name?: string
     }
