@@ -1,7 +1,7 @@
 {
-  "name": "my-nuxt-layer",
-  "type": "module",
+  "name": "@kfupm-hub/scaffold",
   "version": "0.0.1",
+  "type": "module",
   "main": "./nuxt.config.ts",
   "scripts": {
     "dev": "nuxi dev .playground",
