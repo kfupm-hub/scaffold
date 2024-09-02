@@ -6,20 +6,17 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: './i18n.config.ts',
     strategy: 'no_prefix',
-    langDir: 'locales',
     locales: [
       {
         code: 'en',
         language: 'en-US',
         name: 'English',
         dir: 'ltr',
-        files: []
       }, {
         code: 'ar',
         language: 'ar-SA',
         name: 'عربي',
         dir: 'rtl',
-        files: []
       }
     ],
     detectBrowserLanguage: {
@@ -28,5 +25,5 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
     }
-  }
+  },
 })

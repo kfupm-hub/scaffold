@@ -13,7 +13,7 @@ export const useSetupTemplate = () => {
     } else if (pageTitle) {
       return pageTitle
     } else {
-      return appName ?? locale.value === 'ar' ?  'الرئيسية' : 'Home page'
+      return appName ?? '[APP_NAME]'
     }
   })
 
