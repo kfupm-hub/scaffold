@@ -4,7 +4,8 @@ useSetupTemplate()
 
 <template lang="pug">
 main(class="flex min-h-screen flex-col justify-between")
-  AppHeader
+  UGradientEffect(v-if="route.meta?.gradient")
+  LandingHeader
   div(class="flex flex-col flex-1 shrink-0"): slot
-  AppFooter
+  LandingFooter
 </template>

@@ -1,0 +1,101 @@
+{
+  "plan": {
+    "ehsan": {
+      "name": "By Donation",
+      "description": "Contribute to a greater cause through Ehsan.sa.",
+      "price": "19.99 SAR",
+      "badge": {
+        "name": "Recommended",
+        "color": "teal"
+      },
+      "features": [
+        "All proceeds go to charity, making a real difference",
+        "100% of your contribution goes to who truly require it",
+        "Enjoy one month of unlimited access to our toolkit"
+      ],
+      "action": {
+        "name": "Donate now through Ehsan.sa",
+        "color": "teal",
+        "helper": "You will donate 19.99 SAR in total"
+      }
+    },
+    "fourYearsPlan": {
+      "name": "4-years Plan",
+      "description": "Secure long-term access with a one-time payment. Enjoy one account, unlimited opportunities, and ongoing updates.",
+      "price": "1 SAR",
+      "badge": {
+        "name": "Most Popular"
+      },
+      "features": [
+        "One account",
+        "Unlimited opportunities",
+        "Ongoing minor fixes & patch updates",
+        "Lifetime access (until subscription expires)"
+      ],
+      "action": {
+        "name": "Subscribe now",
+        "helper": "You will pay 48.01 SAR in total"
+      }
+    },
+    "twoYearsPlan": {
+      "name": "2-years Plan",
+      "description": "Opt for a two-year plan with one-time payment. Experience one account, unlimited opportunities, and lifetime access.",
+      "price": "1.5 SAR",
+      "features": [
+        "One account",
+        "Unlimited opportunities",
+        "Ongoing minor fixes & patch updates",
+        "Lifetime access (until subscription expires)"
+      ],
+      "action": {
+        "name": "Subscribe now",
+        "helper": "You will pay 36.01 SAR in total"
+      }
+    },
+    "yearlyPlan": {
+      "name": "Yearly Plan",
+      "description": "Commit to a year of seamless access with monthly payments. Enjoy one account, unlimited opportunities, and ongoing updates.",
+      "price": "2 SAR",
+      "features": [
+        "One account",
+        "Unlimited opportunities",
+        "Ongoing minor fixes & patch updates",
+        "Lifetime access (until subscription expires)"
+      ],
+      "action": {
+        "name": "Subscribe now",
+        "helper": "You will pay 24.01 SAR in total"
+      }
+    },
+    "sixMonthsPlan": {
+      "name": "6-months Plan",
+      "description": "Flexible 6-month plan with monthly payments. Access one account, unlimited opportunities, and ongoing updates.",
+      "price": "3 SAR",
+      "features": [
+        "One account",
+        "Unlimited opportunities",
+        "Ongoing minor fixes & patch updates",
+        "Lifetime access (until subscription expires)"
+      ],
+      "action": {
+        "name": "Subscribe now",
+        "helper": "You will pay 18.01 SAR in total"
+      }
+    },
+    "threeMonthsPlan": {
+      "name": "3-months Plan",
+      "description": "Short on time? Choose the 3-month plan for one-time payment. Enjoy one account, unlimited opportunities, and ongoing updates.",
+      "price": "4 SAR",
+      "features": [
+        "One account",
+        "Unlimited opportunities",
+        "Ongoing minor fixes & patch updates",
+        "Lifetime access (until subscription expires)"
+      ],
+      "action": {
+        "name": "Subscribe now",
+        "helper": "You will pay 12.01 SAR in total"
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "sitemap": {
+    "category": {
+      "legal": "Legal",
+      "products": "Products",
+      "seeAlso": "See Also",
+      "resources": "Resources"
+    },
+    "scheduler": {
+      "name": "Scheduler",
+      "description": "Easily create and manage your schedules",
+      "path": "/scheduler"
+    },
+    "pricing": {
+      "name": "Pricing",
+      "path": "/pricing"
+    },
+    "telegram": {
+      "name": "Telegram",
+      "path": "/"
+    },
+    "settings": {
+      "name": "Settings",
+      "path": "/settings"
+    },
+    "dashboard": {
+      "name": "Dashboard",
+      "description": "Adjust preferences for optimal app performance",
+      "path": "/settings"
+    },
+    "shudhoor": {
+      "name": "Shudhoor",
+      "description": "Master concepts with bite-sized knowledge nuggets",
+      "path": "/shudhoor"
+    },
+    "contact": {
+      "name": "Contact us",
+      "path": "/"
+    },
+    "login": {
+      "name": "Log in",
+      "path": "/login"
+    },
+    "terms": {
+      "name": "Terms of Service",
+      "path": "/legal/terms"
+    },
+    "privacy": {
+      "name": "Privacy Policy",
+      "path": "/legal/privacy"
+    },
+    "signup": {
+      "name": "Sign up",
+      "path": "/"
+    },
+    "logout": {
+      "name": "Sign out",
+      "path": "/"
+    },
+    "petrolyInitiative" : {
+      "name": "Petroly Initiative",
+      "path": "/"
+    },
+    "hadiCourseOffering" : {
+      "name": "Hadi's Course Offering",
+      "path": "/"
+    },
+    "yazeedScheduler" : {
+      "name": "Yazeed's Scheduler",
+      "path": "/"
+    },
+    "kfupmRegistrar" : {
+      "name": "KFUPM Registrar",
+      "path": "/"
+    },
+    "kfupmCourseOffering" : {
+      "name": "Course Offering",
+      "path": "/"
+    },
+    "kfupmCourseAvailability" : {
+      "name": "Course Availability",
+      "path": "/"
+    },
+    "kfupmCourseCatalog": {
+      "name": "Course Catalog",
+      "path": "/"
+    },
+    "ourTwitter": {
+      "name": "Our X (Formerly Twitter)",
+      "path": "https://twitter.com/KFUPMHub"
+    }
+  }
+}
