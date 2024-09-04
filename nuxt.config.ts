@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-09-01",
   devtools: { enabled: true },
   typescript: { strict: true },
-  modules: ["@nuxt/ui", "@nuxtjs/i18n"],
+  modules: ["@nuxt/ui", "@nuxtjs/i18n", "@vueuse/nuxt", "@nuxtjs/supabase"],
   i18n: {
     vueI18n: './i18n.config.ts',
     strategy: 'no_prefix',
@@ -27,6 +27,9 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
     }
+  },
+  supabase: {
+    redirect: false
   },
   app: {
     pageTransition: {

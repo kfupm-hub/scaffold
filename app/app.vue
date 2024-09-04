@@ -65,6 +65,8 @@ html
 
 #__nuxt
   overflow-x: hidden
+#__app
+  overflow-x: auto
 
 .app-enter-active, .app-leave-active
   transition: all 0.2s

@@ -6,26 +6,20 @@ defineProps<{
   }>
 }>()
 
+
 const { t } = useI18n()
 const { currentRoute } = useRouter()
 const localePath = useLocalePath()
 
-
 const isNavDrawerOpen = ref(false)
 const currentScrollPosition = ref(0)
 
-if (process.client) {
-  const onScroll = () => {
-    currentScrollPosition.value = window.pageYOffset || document.documentElement.scrollTop
-  }
-
+if (import.meta.client) {
   onMounted(() => {
-    currentScrollPosition.value = 0
-    window.addEventListener('scroll', onScroll)
-
-    onUnmounted(() => {
-      window.removeEventListener('scroll', onScroll)
-    })
+    const app = document.getElementById('__app')
+    useEventListener(app, 'scroll', (evt) => {
+      currentScrollPosition.value = app?.scrollTop || document.documentElement.scrollTop
+    }, false)
   })
 }
 </script>
@@ -62,7 +56,7 @@ Transition(mode="out-in" name="app")
             ul
               ClientOnly
                 NuxtLink(
-                  v-for="link of links.filter(link => link.type === 'nav')"
+                  v-for="(link, i) of links.filter(link => link.type === 'nav')"
                   :to="localePath($t(`sitemap.${link.key}.path`, '#'))"
                   :key="`${link.key}@${i}`"
                 ) {{ $t(`sitemap.${link.key}.name`, link.key) }}
@@ -74,9 +68,12 @@ Transition(mode="out-in" name="app")
             :key="`${i}`"
             :data-key="`${i}`"
           ) {{ $t(`sitemap.${link.key}.name`, link.key) }}
+
 </template>
 
 <style themes scoped lang="sass">
+.cta
+  @apply text-center bg-gray-900 text-primary-400 font-bold text-xs p-2
 .nav-button
   @apply text-gray-600 hover:bg-gray-200 active:bg-gray-300
   @apply dark:text-gray-400 hover:dark:bg-gray-800 active:dark:bg-gray-700
@@ -103,7 +100,7 @@ Transition(mode="out-in" name="app")
 
 <style scoped lang="sass">
 .nav-button
-  @apply fixed flex end-3 top-3 z-40 rounded-full p-2 duration-200 focus:outline-none lg:hidden
+  @apply sticky flex end-3 top-3 z-40 rounded-full p-2 duration-200 focus:outline-none lg:hidden
   .icon
     @apply h-5 w-5
 .drawer
