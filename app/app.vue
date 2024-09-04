@@ -64,7 +64,7 @@ html
     font-size: 5px
 
 #__nuxt
-  overflow: hidden
+  overflow-x: hidden
 
 .app-enter-active, .app-leave-active
   transition: all 0.2s
