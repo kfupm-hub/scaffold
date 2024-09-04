@@ -36,7 +36,7 @@ Html(class="animate-fade-in" :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.di
     template(v-for="link in head.link" :key="link.id")
       Link(:id="link.id" :rel="link.rel" :href="link.href" :hreflang="link.hreflang")
     template(v-for="meta in head.meta" :key="meta.id")
-      <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
+      Meta(:id="meta.id" :property="meta.property" :content="meta.content")
   Body: Transition(mode="out-in" name="app")
     #__app(:dir="head.htmlAttrs.dir" :key="head.htmlAttrs.dir")
       NuxtLoadingIndicator
@@ -46,12 +46,10 @@ Html(class="animate-fade-in" :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.di
 </template>
 
 <style lang="sass">
+html, body, #__nuxt, #__app
+  @apply h-full
 html
   font-family: Inter, Alexandria
-  // @media (max-width: 640px)
-    // font-size: 24px
-  // @media (max-width: 480px)
-    // font-size: 20px
   @media (max-width: 400px)
     font-size: 18px
   @media (max-width: 360px)

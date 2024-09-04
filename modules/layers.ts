@@ -28,7 +28,7 @@ export default defineNuxtModule({
       })
 
       const services = nuxt.options._layers.map(layer => layer.config.service).filter(service => {
-        return service?.endpoint !== "/"
+        return service?.name && service?.endpoint !== "/"
       })
 
       const currentService = (nuxt.options as any).service as typeof services[0]

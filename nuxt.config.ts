@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
   compatibilityDate: "2024-09-01",
   devtools: { enabled: true },
+  typescript: { strict: true },
   modules: ["@nuxt/ui", "@nuxtjs/i18n"],
   i18n: {
     vueI18n: './i18n.config.ts',
@@ -26,5 +27,15 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
     }
-  }
+  },
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    },
+    layoutTransition: {
+      name: 'layout',
+      mode: 'out-in'
+    }
+  },
 })
