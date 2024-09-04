@@ -4,14 +4,15 @@ definePageMeta({
 })
 
 const { service } = useAppConfig()
-const endpoint = computed(() => {
-  const s = Array.isArray(service) ? service[0] : service
-  if (typeof s === 'object') return s.endpoint
-  return null
-})
-if (endpoint.value && endpoint.value !== '/') {
-  navigateTo(endpoint.value)
+
+const currentService = useRuntimeConfig().public.currentService
+if (currentService?.endpoint && currentService.endpoint !== '/') {
+  navigateTo(currentService.endpoint)
 }
+
+const services = useRuntimeConfig().public.services
 </script>
 
-<template></template>
+<template lang="pug">
+h1 Scaffold
+</template>
