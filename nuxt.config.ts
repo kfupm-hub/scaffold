@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-09-01",
   devtools: { enabled: true },
   typescript: { strict: true },
-  modules: ["@nuxt/ui", "@nuxtjs/i18n", "@vueuse/nuxt", "@nuxtjs/supabase"],
+  modules: ["@nuxt/ui", "@nuxtjs/i18n", "@vueuse/nuxt", "@nuxtjs/supabase", "@pinia/nuxt"],
   i18n: {
     vueI18n: './i18n.config.ts',
     strategy: 'no_prefix',
