@@ -29,7 +29,9 @@ export default defineNuxtConfig({
     }
   },
   supabase: {
-    redirect: false
+    redirect: false,
+    url: process.env.SUPABASE_URL || "https://example.supabase.co",
+    key: process.env.SUPABASE_KEY || "<SUPABASE_KEY>"
   },
   app: {
     pageTransition: {

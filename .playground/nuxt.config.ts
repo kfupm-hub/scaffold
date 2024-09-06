@@ -1,4 +1,4 @@
+//@ts-ignore
 export default defineNuxtConfig({
-  extends: ['..'],
-  modules: ['@nuxt/eslint', '@nuxt/ui']
+  extends: ['..']
 })
