@@ -7,7 +7,7 @@ defineProps<{
 
 const { t, te, localeProperties } = useI18n()
 
-const { service: services } = useAppConfig()
+const services = useRuntimeConfig().public.services
 
 const popperPlacement = (dir: string) => {
   const otherside = dir == 'end' ? 'start' : 'end'
@@ -47,10 +47,10 @@ const goHome = () => {
               UIcon.icon(name='i-heroicons-chevron-up-down-20-solid')
           template(#panel='{ close }')
             .list
-              NuxtLink.item(v-for='service of services' :to='$t(`sitemap.${service.name}.path`, "#")' :disabled='route.meta.service === service.name' @click='close()')
+              NuxtLink.item(v-for='service of services' :to='$t(`sitemap.${service.name.toLowerCase()}.path`, "#")' :disabled='route.meta.service === service.name.toLowerCase()' @click='close()')
                 UIcon.icon(v-if="service.icon" :name='service.icon')
-                h4 {{ $t(`sitemap.${service.name}.name`, String(service.name)) }}
-                p(v-if="$te(`sitemap.${service.name}.description`)") {{ $t(`sitemap.${service.name}.description`) }}
+                h4 {{ $t(`sitemap.${service.name.toLowerCase()}.name`, String(service.name.toLowerCase())) }}
+                p(v-if="$te(`sitemap.${service.name.toLowerCase()}.description`)") {{ $t(`sitemap.${service.name.toLowerCase()}.description`) }}
       aside
         //- a(href="#" class="hidden text-sm text-gray-500 transition-colors hover:text-gray-700 sm:block" target="_blank") Changelog
         ULink.link(

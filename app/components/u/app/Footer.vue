@@ -16,8 +16,8 @@ footer
         p.slogan
           slot(name="slogan")
       .actions
-        ColorModeSwitcher
-        LocaleSwitcher
+        UColorModeSwitcher
+        ULocaleSwitcher
     UDivider.divider
     .bottom-bar
       .links(class='dark:text-neutral-300')
